@@ -1,0 +1,51 @@
+body {
+background: url(../images/bg.jpg) center center fixed;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/* Classes */
+
+.enlarge {
+
+ background-size: cover;
+
+}
+
+.bottom {
+
+  margin-top: 400px;
+}
+
+.btn-large {
+
+  /*background-color: #ba0101;*/
+  color: white;
+  background: rgba(225, 0, 0, 0.85);
+  border-radius: 15px;
+}
+
+.btn-large:hover {
+
+  background: rgba(0 ,0, 0, 0);
+  border: solid 1px rgba(0, 0, 0, 0.24);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.298);
+  color: black;
+
+}
+
+.shadow {
+
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.298);
+}
+
+.form-container {
+
+  height: 1000px;
+}
+
+h2 {
+
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.298);
+  }
