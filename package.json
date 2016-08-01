@@ -2,7 +2,7 @@
   "name": "datemate",
   "version": "1.0.0",
   "description": "dating application that takes users inputs and provides their best match",
-  "main": "server.js",
+  "main": "home.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
