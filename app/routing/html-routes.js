@@ -5,21 +5,23 @@ var path = require('path');
 module.exports = function(app) {
 
     app.get('/', function(request, response){
-        response.sendFile(path.join(__dirname + '../public/home.html'));
+        response.sendFile(path.join(__dirname + '/app/public/home.html'));
     });
 
     app.get('/info', function(request, response){
-        response.sendFile(path.join(__dirname + '../public/info.html'));
+        response.sendFile(path.join(__dirname + '/app/public/info.html'));
     });
 
     app.get('/survey', function(request, response){
-        response.sendFile(path.join(__dirname + '../public/survey.html'));
+        response.sendFile(path.join(__dirname + '/app/public/survey.html'));
     });
+
+    app.use(express.static(process.cwd() + '../public'));
 
 // A default USE route that leads to the home.html page
 
     app.use(function(request, response){
-        response.sendFile(path.join(__dirname + '../public/home.html'));
+        response.sendFile(path.join(__dirname + '/app/public/home.html'));
     });
 
 }

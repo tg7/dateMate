@@ -12,12 +12,12 @@ app.get('api/friends', function (request, response) {
 });
 
 app.post('api/info', function (request, response) {
-  response.sendFile(path.join(__dirname + '../public/info.html'))
+  response.sendFile(path.join(__dirname + '/../public/info.html'))
   // Add JSON Body Parser Logic to display in JSON format
 });
 
 app.post('api/survey', function (request, response) {
-  response.sendFile(path.join(__dirname + '../public/survey.html'))
+  response.sendFile(path.join(__dirname + '/../public/survey.html'))
 
   console.log(request.body.name);
   console.log(request.body.scores.length);
@@ -26,7 +26,7 @@ app.post('api/survey', function (request, response) {
 
 };
 
-//Have To Fix This Area
+//Have To Fix This Area To Show Logic for Comparing People
 
     var mate = {};
     

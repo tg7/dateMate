@@ -4,7 +4,7 @@
   "description": "dating application that takes users inputs and provides their best match",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "todd",
     "start": "node server.js"
   },
   "repository": {
@@ -29,3 +29,5 @@
     "path": "^0.12.7"
   }
 }
+
+
