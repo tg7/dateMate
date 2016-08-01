@@ -4,6 +4,8 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Classes */ 
+
 .formArea {
   background: rgba(0, 0, 0, 0.80);
   color: white;
@@ -44,6 +46,8 @@ body {
   color: black;
 
 }
+
+/* Fonts */
 
 h5 {
 
