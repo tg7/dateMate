@@ -29,8 +29,9 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
     });
 
 //Have To Fix This Issue where CSS is not loading properly
- app.use(express.static(process.cwd() + '../public'));
+ // app.use(express.static(process.cwd() + '../public'));
 
+ app.use(express.static(process.cwd() + '/app/public'));
 // Shows console which port we're connected to
 app.listen(PORT, function(){
   console.log('App listening on PORT ' + PORT);
