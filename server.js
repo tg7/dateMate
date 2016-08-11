@@ -1,12 +1,15 @@
-//Require Dependencies
+// Required Dependencies
+// =============================================================
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 
-// Shows that we are using an express server
-var app = express();
+// Enables usage of friends object
+// var friends = require ('./friends.js')
 
-// Shows the port chosen or to use 3000
+// Sets up the Express App
+// =============================================================
+var app = express();
 var PORT = process.env.PORT || 3000;
 
 // JSON Characteristics
@@ -16,15 +19,16 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 
+// Created routes for server
  app.get('/', function(request, response){
         response.sendFile(path.join(__dirname + '/app/public/home.html'));
     });
 
- app.get('/info.html', function(request, response){
+ app.get('/info', function(request, response){
         response.sendFile(path.join(__dirname + '/app/public/info.html'));
     });
 
- app.get('/survey.html', function(request, response){
+ app.get('/survey', function(request, response){
         response.sendFile(path.join(__dirname + '/app/public/survey.html'));
     });
 
@@ -36,3 +40,5 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.listen(PORT, function(){
   console.log('App listening on PORT ' + PORT);
 })
+
+

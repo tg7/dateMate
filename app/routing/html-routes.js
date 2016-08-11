@@ -18,6 +18,7 @@ module.exports = function(app) {
 
     app.use(express.static(process.cwd() + '../public'));
 
+
 // A default USE route that leads to the home.html page
 
     app.use(function(request, response){
